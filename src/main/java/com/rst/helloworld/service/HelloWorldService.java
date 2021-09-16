@@ -7,6 +7,8 @@ import org.springframework.util.StringUtils;
 
 @Service
 public class HelloWorldService {
+	
+	String ritu;
 
 	private static final Logger logger = LoggerFactory.getLogger(HelloWorldService.class);
 
@@ -22,7 +24,7 @@ public class HelloWorldService {
 
 		logger.debug("getTitle() is executed! $name : {}", name);
 
-		if(StringUtils.isEmpty(name)){
+		if(StringUtils.isEmpty(ritu)){
 			return "Hello Docker";
 		}else{
 			return "Hello " + name;
